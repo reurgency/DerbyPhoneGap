@@ -28,28 +28,32 @@ var app = {
      * Callback for PhoneGaps deviceready event.
      */
     deviceready: function() {
-        // This is an event handler function, which means the scope is the event.
-        // So, we must explicitly called `app.report()` instead of `this.report()`.
-        app.report('deviceready');
-        // Toggle the state from "pending" to "complete".
-        // Accomplished by adding .hide to the pending element and removing
-        // .hide from the complete element.
-        document.querySelector('#' + id + ' .pending').className += ' hide';
-        var completeElem = document.querySelector('#' + id + ' .complete');
-        completeElem.className = completeElem.className.split('hide').join('');
-        //Add listeners to detect if the App comes online or goes offline
-        document.addEventListener("online", app.onAppIsOnline, false);
-        document.addEventListener("offline", app.onAppIsOffline, false);
-        //Add click listener to connection retry button
-        document.getElementById("retryConnection_btn").addEventListener("click", this.retryConnectionHandler, false);
-		// check for internet connectivity
-        if (navigator.connection.type == 'none') {
-            app.onAppIsOffline();
-			app.report('deviceIsOffline');
-        } else {
-            app.onAppIsOnline();
-			app.report('deviceIsOnline');
-        }
+		try{
+			// This is an event handler function, which means the scope is the event.
+			// So, we must explicitly called `app.report()` instead of `this.report()`.
+			app.report('deviceready');
+			// Toggle the state from "pending" to "complete".
+			// Accomplished by adding .hide to the pending element and removing
+			// .hide from the complete element.
+			document.querySelector('#' + id + ' .pending').className += ' hide';
+			var completeElem = document.querySelector('#' + id + ' .complete');
+			completeElem.className = completeElem.className.split('hide').join('');
+			//Add listeners to detect if the App comes online or goes offline
+			document.addEventListener("online", app.onAppIsOnline, false);
+			document.addEventListener("offline", app.onAppIsOffline, false);
+			//Add click listener to connection retry button
+			document.getElementById("retryConnection_btn").addEventListener("click", this.retryConnectionHandler, false);
+			// check for internet connectivity
+			if (navigator.connection.type == 'none') {
+				app.onAppIsOffline();
+				app.report('deviceIsOffline');
+			} else {
+				app.onAppIsOnline();
+				app.report('deviceIsOnline');
+			}
+		} catch( exception ){
+			alert(exception.name + ": " + exception.message);
+		}
     },
     /**
      * function called to re-direct to the remote URL
