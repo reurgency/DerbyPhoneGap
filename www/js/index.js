@@ -65,7 +65,7 @@ var app = {
     report: function(id) {
         // Report the event in the console
         console.log("Report: " + id);
-        //alert("Report: " + id);
+        alert("Report: " + id);
     },
     /**
      * Callback for when PhoneGap detects that the device is Online
