@@ -61,7 +61,7 @@ var app = {
     accessRemoteSite: function(){
         //Get the appropriate remote URL based on the RemoteServerEnvironment config constant & re-direct
         document.location.href =  eval(RemoteServerEnvironment+"_RemoteURL");
-		//app.report('accessRemoteSite');
+		app.report('accessRemoteSite');
     },
     /**
      * A generic logging function
@@ -69,7 +69,7 @@ var app = {
     report: function(id) {
         // Report the event in the console
         console.log("Report: " + id);
-        alert("Report: " + id);
+        //alert("Report: " + id);
     },
     /**
      * Callback for when PhoneGap detects that the device is Online
