@@ -35,9 +35,9 @@ var app = {
 			// Toggle the state from "pending" to "complete".
 			// Accomplished by adding .hide to the pending element and removing
 			// .hide from the complete element.
-			document.querySelector('#' + id + ' .pending').className += ' hide';
-			var completeElem = document.querySelector('#' + id + ' .complete');
-			completeElem.className = completeElem.className.split('hide').join('');
+			//document.querySelector('#' + id + ' .pending').className += ' hide';
+			//var completeElem = document.querySelector('#' + id + ' .complete');
+			//completeElem.className = completeElem.className.split('hide').join('');
 			//Add listeners to detect if the App comes online or goes offline
 			document.addEventListener("online", app.onAppIsOnline, false);
 			document.addEventListener("offline", app.onAppIsOffline, false);
