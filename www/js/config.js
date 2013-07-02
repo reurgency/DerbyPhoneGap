@@ -2,7 +2,7 @@
  * Environment variable for the remote server. This is used to select the appropriate remote URL
  * @type {string} Environment Name
  */
-const RemoteServerEnvironment = "Prod";
+const RemoteServerEnvironment = "Dev";
 
 /**
  * Remote URL Variables. One for each possible RemoteServerEnvironment value. Must Be named like
@@ -10,11 +10,11 @@ const RemoteServerEnvironment = "Prod";
  *
  * URLs TBD
  */
-const Dev_RemoteURL     = "http://www.reurgency.com/#/Dev";
-const QA_RemoteURL      = "http://www.reurgency.com/#/QA";
-const Staging_RemoteURL = "http://www.reurgency.com/#/Staging";
-const Demo_RemoteURL    = "http://www.reurgency.com/#/Demo";
-const Prod_RemoteURL    = "http://www.reurgency.com/#/Prod";
+const Dev_RemoteURL     = "http://dev1.derby.reurgency.com/derby/racetrackermobile/index.html";
+const QA_RemoteURL      = "http://test1.derby.reurgency.com/derby/racetrackermobile/index.html";
+const Staging_RemoteURL = "http://staging.derby.reurgency.com/derby/racetrackermobile/index.html";
+const Demo_RemoteURL    = "http://deemo.derby.reurgency.com/derby/racetrackermobile/index.html";
+const Prod_RemoteURL    = "http://www.derby.reurgency.com/derby/racetrackermobile/index.html";
 //END REMOTE URL VARIABLES
 
 /**
