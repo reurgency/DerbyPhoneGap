@@ -67,6 +67,6 @@ var init = (function(){
     document.getElementById("configComplete_msg").innerHTML = ConfigCompleteMsg;
     document.getElementById("offline_title").innerHTML = OfflineTitle;
     document.getElementById("offline_msg").innerHTML = OfflineMsg;
-    document.getElementById("retryConnection_btn").value = RetryConnectionBtnMsg;
+    document.getElementById("retryConnection_btn").innerHTML = RetryConnectionBtnMsg;
     //END
 })();
