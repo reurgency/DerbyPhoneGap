@@ -54,7 +54,7 @@
         A list of available plugins are available at https://build.phonegap.com/docs/plugins
     -->
 
-    <!-- Define app icon for each platform. -->
+    <!-- Default root/icon.png used if required size is not found in list below. -->
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:density="ldpi" />
     <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:density="mdpi" />
@@ -70,7 +70,7 @@
     <icon src="res/icon/windows-phone/icon-48.png"  gap:platform="winphone" />
     <icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone"   gap:role="background" />
 
-    <!-- Define app splash screen for each platform. -->
+    <!-- Default root/splash.png used if required size is not found in list below -->
     <gap:splash src="splash.png" />
     
     <!-- Android Splash Images -->
@@ -85,25 +85,26 @@
     
 
     <!-- iOS Splash Images -->
-    <gap:splash src="res/screen/ios/screen-ipad-landscape-2x.png"       gap:platform="ios"     width="2008" height="1536" />
-    <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
-    <gap:splash src="res/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
-    <gap:splash src="res/screen/ios/screen-iphone-landscape-2x.png"     gap:platform="ios"     width="960" height="640" />
-    <gap:splash src="res/screen/ios/screen-iphone-landscape.png"        gap:platform="ios"     width="480" height="320" />
+    <!--iPhone (only portrait supported by iOS)-->
+    <gap:splash src="res/screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />
     <gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"     width="640" height="1136" />
-    <gap:splash src="res/screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
+    <!--iPad (portrait & landscape supported; deduct 20px from height for status bar region) -->
+    <gap:splash src="res/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1004" />
+    <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="748" />
+    <!--iPad Retina (portrait & landscape supported; deduct 40px from height for status bar region) -->
+    <gap:splash src="res/screen/ios/screen-ipad-portrait-2x.png"        gap:platform="ios"     width="1536" height="2008" />
+    <gap:splash src="res/screen/ios/screen-ipad-landscape-2x.png"       gap:platform="ios"     width="2048" height="1496" />
 
-    
+
+    <!--Blackberry - Windows splash-->
     <gap:splash src="res/screen/blackberry/screen-225.png"         gap:platform="blackberry" />
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg" gap:platform="winphone" />
 
     <!--
         Define access to external domains.
-
         <access />            - a blank access tag denies access to all external resources.
         <access origin="*" /> - a wildcard access tag allows access to all external resource.
-
         Otherwise, you can specify specific domains:
     -->
     <access origin="http://127.0.0.1*"/> <!-- allow local pages -->
