@@ -116,7 +116,8 @@
 	<access origin="https://www.facebook.com*"/> -->
 	<!--<access origin="*" />-->
     	
-    	<access origin="http://*reurgency.com/" browserOnly="true" />
+    	<access origin="http://www.reurgency.com/" browserOnly="true" />
+    	<access origin="http://*.derby.reurgency.com/" />
   <!--
         <access origin="http://phonegap.com" />                    - allow any secure requests to http://honegap.com/
         <access origin="http://phonegap.com" subdomains="true" />  - same as above, but including subdomains, such as http://build.phonegap.com/
