@@ -2,7 +2,7 @@
  * Environment variable for the remote server. This is used to select the appropriate remote URL
  * @type {string} Environment Name
  */
-const RemoteServerEnvironment = "Dev";
+const RemoteServerEnvironment = "Prod";
 
 /**
  * Remote URL Variables. One for each possible RemoteServerEnvironment value. Must Be named like
