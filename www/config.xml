@@ -3,10 +3,10 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.Derby.apps.dev1"
+        id        = "com.Derby.apps.test1"
         version   = "1.0.0">
 
-    <name>AASBD Mobile Heat Tracker</name>
+    <name>AASBD Mobile Heat Tracker Test1</name>
 
     <description>
         AASBD Mobile Heat Tracker
