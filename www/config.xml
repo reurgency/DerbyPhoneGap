@@ -108,16 +108,16 @@
         Otherwise, you can specify specific domains:
     -->
     <access origin="http://127.0.0.1*"/> <!-- allow local pages -->
-	<!-- <access origin="http://dev1.derby.reurgency.com*"/>
+	<access origin="http://dev1.derby.reurgency.com*"/>
 	<access origin="http://test1.derby.reurgency.com*"/>
 	<access origin="http://staging.derby.reurgency.com*"/>
 	<access origin="http://demo.derby.reurgency.com*"/>
 	<access origin="http://www.derby.reurgency.com*"/>
-	<access origin="https://www.facebook.com*"/> -->
-	<!--<access origin="*" />-->
+	<access origin="https://www.facebook.com*"/> 
+	
     	
     	<access origin="http://www.reurgency.com/" browserOnly="true" />
-    	<access origin="*" />
+    	
   <!--
         <access origin="http://phonegap.com" />                    - allow any secure requests to http://honegap.com/
         <access origin="http://phonegap.com" subdomains="true" />  - same as above, but including subdomains, such as http://build.phonegap.com/
