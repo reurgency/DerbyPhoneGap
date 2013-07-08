@@ -21,7 +21,7 @@ const Prod_RemoteURL    = "http://www.derby.reurgency.com/derby/racetrackermobil
  * The apps title. This will be injected into document.title
  * @type {string}
  */
-const AppTitle = "AASBD Mobile Heat Tracker";
+const AppTitle = "AASBD Mobile Heat Tracker Dev1";
 /**
  * The Title in the config block. Typically the company name
  * @type {string}
