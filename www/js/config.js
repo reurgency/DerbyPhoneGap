@@ -14,7 +14,7 @@ const Dev_RemoteURL     = "http://dev1.derby.reurgency.com/derby/racetrackermobi
 const QA_RemoteURL      = "http://test1.derby.reurgency.com/derby/racetrackermobile/index.html";
 const Staging_RemoteURL = "http://staging.derby.reurgency.com/derby/racetrackermobile/index.html";
 const Demo_RemoteURL    = "http://deemo.derby.reurgency.com/derby/racetrackermobile/index.html";
-const Prod_RemoteURL    = "http://www.derby.reurgency.com/derby/racetrackermobile/index.html";
+const Prod_RemoteURL    = "http://aaracetracker.com/derby/racetrackermobile/index.html";
 //END REMOTE URL VARIABLES
 
 /**
