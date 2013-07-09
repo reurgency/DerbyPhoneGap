@@ -26,7 +26,7 @@ const AppTitle = "AASBD Mobile Heat Tracker Test1";
  * The Title in the config block. Typically the company name
  * @type {string}
  */
-const ConfigTitle = "reUrgency";
+const ConfigTitle = "reUrgency Test1";
 /**
  * The msg to display while we wait for PhoneGaps deviceready event
  * @type {string}
